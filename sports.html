@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Racing Cars Showcase</title>
+    <style>
+        /* General reset for the page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url("back12.avif");
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        .car-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .car-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .car-item:hover {
+            transform: scale(1.05);
+        }
+
+        .car-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .car-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .car-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .car-item:hover .car-info {
+            opacity: 1;
+        }
+
+        .car-info h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .car-info a {
+            color: #ff9f00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .car-info a:hover {
+            text-decoration: underline;
+        }
+        /*back button corner */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #7676764c; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background-color: rgba(48, 48, 48, 0.681);
+}
+
+
+.back-btn svg {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}    
+    </style>
+</head>
+<body>
+
+    <h1>BMW High Performance Cars List</h1>
+    <div class="car-list">
+
+                <!-- BMW M2  -->
+                <div class="car-item">
+                    <a href="https://www.bmw-m.com/en/fastlane/motorsport/race-cars/bmw-m2-cs-racing.html" target="_blank" rel="noopener noreferrer">
+                        <img src="m2CSsp.jpg" alt="BMW M2">
+                        <div class="car-info">
+                            <h2>BMW M2</h2>
+                            <p>Click to learn more</p>
+                        </div>
+                    </a>
+                </div>
+
+        <!-- BMW M3  -->
+        <div class="car-item">
+            <a href="https://www.bmw-m.com/en/topics/magazine-article-pool/bmw-m3-cs-g80.html" target="_blank" rel="noopener noreferrer">
+                <img src="m3CSsp1.avif" alt="BMW M3">
+                <div class="car-info">
+                    <h2>BMW M3</h2>
+                    <p>Click to learn more</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- M4 CS -->
+        <div class="car-item">
+            <a href="https://www.bmw-m.com/en/all-models/overview-m-and-m-performance/bmw-m4-cs/2024/bmw-m4-cs.html" target="_blank" rel="noopener noreferrer">
+                <img src="m4CSsp1.avif" alt="BMW M4">
+                <div class="car-info">
+                    <h2>BMW M4 CS</h2>
+                    <p>Click to learn more</p>
+                </div>
+            </a>
+        </div>
+
+    <!-- M5 CS -->
+        <div class="car-item">
+            <a href="https://www.bmw-m.com/en/topics/magazine-article-pool/bmw-m5-cs-2021.html" target="_blank" rel="noopener noreferrer">
+                <img src="m5CSsp1.avif" alt="BMW M5 CS">
+                <div class="car-info">
+                    <h2>BMW M5 CS</h2>
+                    <p>Click to learn more</p>
+                </div>
+            </a>
+        </div>
+
+    <!-- M8 CS -->
+    <div class="car-item">
+        <a href="https://www.bmw.in/en/all-models/m-series/m8-coupe/2022/bmw-m8-competition-coupe-overview.html" target="_blank" rel="noopener noreferrer">
+            <img src="m8CSsp1.jpg" alt="BMW M8 CS">
+            <div class="car-info">
+                <h2>BMW M8 CS</h2>
+                <p>Click to learn more</p>
+            </div>
+        </a>
+    </div>
+
+        <!-- M8 CS -->
+        <div class="car-item">
+            <a href="https://www.bmw-m.com/en/fastlane/motorsport/motorsport.html" target="_blank" rel="noopener noreferrer">
+                <img src="msports1.avif" alt="BMW Motorsport">
+                <div class="car-info">
+                    <h2>More about BMW Track cars</h2>
+                    <p>Click to learn more</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+            <!-- Back Button -->
+            <a href="javascript:history.back()" class="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 12H5m7 7l-7-7 7-7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Go Back
+            </a>
+        
+</body>
+</html>

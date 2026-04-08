@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(87, 87, 87);
+    
+    
+    background-image: url("bmwback12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 1px;
+    padding: 0;
+}
+header {
+    
+    background-image: url("msports1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    text-align: center;
+}
+header h1 {
+    
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: initial;
+    
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2a2a2a6c;
+}
+
+.navbar .logo {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #70707035;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.section {
+    padding: 2rem;
+    text-align: center;
+    
+}
+/* H2 styling */
+.section h2 {
+    font-family: "PT Serif", serif;
+    font-weight: 500;
+    font-style: initial;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    border: 0px solid black;
+    background-color: rgba(0, 0, 0, 0.258);
+    margin-top: 30px;
+}
+
+        /* Car Gallery Section */
+        .car-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+            justify-items: center;
+            
+        }
+
+        .car-card {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .car-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .car-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .car-card:hover .car-info {
+            opacity: 1;
+        }
+
+        .car-name {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .car-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .car-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .car-name {
+                font-size: 1.2rem;
+            }
+
+            .car-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .car-name {
+                font-size: 1rem;
+            }
+
+            .car-description {
+                font-size: 0.8rem;
+            }
+        }
+
+    

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Z Series</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url("back12.avif");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .car-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .car-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+        .car-item:hover {
+            transform: scale(1.03);
+        }
+        .car-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .car-item:hover img {
+            transform: scale(1.05);
+        }
+        .car-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.65);
+            color: white;
+        }
+        .car-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .car-info p {
+            line-height: 1.6;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0,0,0,0.55);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        .back-btn:hover {
+            background-color: rgba(0,0,0,0.75);
+        }
+    </style>
+</head>
+<body>
+    <h1>BMW Z Series</h1>
+    <div class="car-list">
+        <div class="car-item">
+            <a href="https://en.wikipedia.org/wiki/BMW_Z4" target="_blank" rel="noopener noreferrer">
+                <img src="bmwZs.jpg" alt="BMW Z Series">
+                <div class="car-info">
+                    <h2>BMW Z4</h2>
+                    <p>The BMW Z4 is a two-seater roadster offering pure driving pleasure with BMW's iconic design language and agile handling.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a href="javascript:history.back()" class="back-btn">← Go Back</a>
+</body>
+</html>

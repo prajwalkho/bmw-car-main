@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Cars Showcase</title>
+    <style>
+        /* General styling for dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #1e1e1e;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 500px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+}
+
+.overlay p {
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore BMW Cars</h1>
+        <p>Discover the elegance and performance of BMW.</p>
+    </header>
+
+    <div class="gallery">
+        <!-- Car 1 -->
+        <div class="gallery-item">
+            <a href="car1.html">
+                <img src="pic2s_s.jpg" alt="Car Model 1">
+                <div class="overlay">
+                    <h3>BMW 2 series</h3>
+                </div>
+            </a>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="gallery-item">
+            <a href="car2.html">
+                <img src="bmw3s.jpg" alt="Car Model 2">
+                <div class="overlay">
+                    <h3>BMW 3 series</h3>
+                    
+                </div>
+            </a>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="gallery-item">
+            <a href="car3.html">
+                <img src="bmw5s.jpg" alt="Car Model 3">
+                <div class="overlay">
+                    <h3>BMW 5 series</h3>
+                
+                </div>
+            </a>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="gallery-item">
+            <a href="car4.html">
+                <img src="BMW7s.jpg" alt="Car Model 4">
+                <div class="overlay">
+                    <h3>BMW 7 Series</h3>
+                
+                </div>
+            </a>
+        </div>
+        <!-- Car 1 -->
+    <div class="gallery-item">
+        <a href="car5.html">
+            <img src="bmwm2s.jpg" alt="Car Model 5">
+            <div class="overlay">
+                <h3>BMW M</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Car 2 -->
+    <div class="gallery-item">
+        <a href="car6.html">
+            <img src="bmwXs.jpg" alt="Car Model 6">
+            <div class="overlay">
+                <h3>BMW X</h3>
+            </div>
+        </a>
+    </div>
+
+    <!-- Car 3 -->
+    <div class="gallery-item">
+        <a href="car7.html">
+            <img src="bmwZs.jpg" alt="Car Model 7">
+            <div class="overlay">
+                <h3>BMW Z Series</h3>
+                <p>Convertible sports car styling.</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Car 4 -->
+    <div class="gallery-item">
+        <a href="https://en.wikipedia.org/wiki/BMW_i4" target="_blank" rel="noopener noreferrer">
+            <img src="bmwI4s.jpg" alt="Car Model 8">
+            <div class="overlay">
+                <h3>BMW i4</h3>
+                <p>Luxury meets innovation.</p>
+            </div>
+        </a>
+    </div>
+    </div>
+</body>
+</html>
