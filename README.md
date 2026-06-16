@@ -380,11 +380,17 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
+### Author
+
+- **Name:** Prajwal Khot
+- **Email:** [prajwalkhot39@gmail.com]
+- **GitHub:** [@prajwalkho](https://github.com/prajwalkho)
+- **LinkedIn:** [www.linkedin.com/in/prajwal-p-khot]
+  
 ## 📞 Support & Contact
 
 - **Issues**: Open an issue on [GitHub Issues](https://github.com/yourusername/bmw-car-showcase/issues)
 - **Discussions**: Start a discussion for feature requests and suggestions
-- **Email**: contact@yourdomain.com (optional)
 
 ---
 
